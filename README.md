@@ -60,6 +60,15 @@ function MyComponent() {
 
 ### The API
 
+It is recommended that you give your app/site some base css:
+
+```css
+html, body, #app {
+  margin: 0;
+  height: 100%;
+}
+```
+
 **Flex**. By default the Flex container will be a normal container that justifies to any parent Flex containers. It does not grow or affect its children in any way
 
 **row**. Makes the children line up horizontally
