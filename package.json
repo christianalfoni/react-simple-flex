@@ -1,0 +1,39 @@
+{
+  "name": "react-simple-flex",
+  "version": "0.1.0",
+  "description": "An intuitive abstraction over flexbox",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --content-base build/",
+    "build": "webpack --config webpack.build.config.js",
+    "prepublish": "npm run build"
+  },
+  "dependencies": {
+    "react": "15.0.2",
+    "react-dom": "15.0.2"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "1.6.1",
+    "webpack-dev-server": "1.14.1",
+    "webpack": "1.12.13",
+    "babel-loader": "6.2.4",
+    "babel-preset-es2015": "6.6.0",
+    "babel-preset-react": "6.5.0",
+    "babel-preset-stage-0": "6.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christianalfoni/react-simple-flex.git"
+  },
+  "keywords": [
+    "flexbox",
+    "flex",
+    "react"
+  ],
+  "author": "Christian Alfoni",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/christianalfoni/react-simple-flex/issues"
+  },
+  "homepage": "https://github.com/christianalfoni/react-simple-flex#readme"
+}
