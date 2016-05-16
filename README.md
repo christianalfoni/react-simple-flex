@@ -1,6 +1,8 @@
 # react-simple-flex
 An intuitive abstraction over flexbox
 
+**Note** This project is currently in its testing phase!
+
 ### Why does this exist?
 Flexbox is awesome, but very hard to grasp. Especially *justifyContent*, *alignItems* and *alignContent* are not really intuitive. And their behaviour changes based on the *flexDirection*. So this little library just creates an intuitive abstraction over flexbox, making layouts super simple.
 
@@ -68,7 +70,7 @@ function MyComponent() {
 
 **reverseColumn**. Reverses the children
 
-**wrap**. Allows the children to wrap, using values
+**wrap**. Allows the children to wrap
 
 **reverseWrap**. Reversed wrap
 
