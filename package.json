@@ -1,6 +1,6 @@
 {
   "name": "react-simple-flex",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "An intuitive abstraction over flexbox",
   "main": "dist/index.js",
   "scripts": {
