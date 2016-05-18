@@ -83,7 +83,7 @@ html, body, #app {
 
 **reverseWrap**. Reversed wrap
 
-**alignChildren="center center"**. Set the alignment of children on the two axis. With *row* you would say *alignChildren="right bottom"*, and with *column* the same thing would happen using *alignChildren="bottom right"*. Both axis also supports *space-between* and *space-around*. You do not have to think about multi line properties, this is done automatically as React knows the number of children
+**alignChildren="center center"**. Set the alignment of children on the two axis. With *row* you would say *alignChildren="right bottom"*, and with *column* the same thing would happen using *alignChildren="bottom right"*. Both axis also supports *space-between* and *space-around*. You can also use *stretch* as the second alignment. You do not have to think about multi line properties, this is done automatically as React knows the number of children
 
 **grow**, **grow="2"**. Makes the flex container stretch and take up as much space as possible
 
