@@ -6,6 +6,9 @@ An intuitive abstraction over flexbox
 ### Why does this exist?
 Flexbox is awesome, but very hard to grasp. Especially *justifyContent*, *alignItems* and *alignContent* are not really intuitive. And their behaviour changes based on the *flexDirection*. So this little library just creates an intuitive abstraction over flexbox, making layouts super simple.
 
+### What about the support for flexbox?
+Of course Internet Explorer is lagging behind a bit, but yeah, you can use Flexbox: http://caniuse.com/#feat=flexbox. This project no IE11 fixes currently, but please help out with that if you like the lib and need it :)
+
 ### Some examples
 ```js
 import Flex from 'react-simple-flex';
@@ -63,7 +66,7 @@ function MyComponent() {
 It is recommended that you give your app/site some base css:
 
 ```css
-html, body, #app {
+html, body, #app, #app > * {
   margin: 0;
   height: 100%;
 }
