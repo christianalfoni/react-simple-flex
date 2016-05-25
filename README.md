@@ -17,7 +17,7 @@ import Flex from 'react-simple-flex';
 
 function MyComponent() {
   return (
-    <Flex row alignChildren="center center">
+    <Flex row align="center center">
       I am on center of page
     </Flex>
   );
@@ -141,5 +141,5 @@ html, body, #app, #app > * {
 
 ### How it differs from normal flex
 - By default a Flex container does not stretch, you have to use **grow** explicitly. This just creates a more predictable behaviour
-- No more thinking justify, align, content... just **alignChildren**, much like a background image position. The library will use the correct properties under the hood
+- No more thinking justify, align, content... just **align**, much like a background image position. The library will use the correct properties under the hood
 - It is just a lot less to align... or justify?... in your head
