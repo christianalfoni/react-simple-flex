@@ -15,9 +15,11 @@ Of course Internet Explorer is lagging behind a bit, but yeah, you can use Flexb
 ```js
 import Flex from 'react-simple-flex';
 
+// Using align, alignVertical or alignHorizontal will
+// automatically set the Flex container as "row"
 function MyComponent() {
   return (
-    <Flex row align="center center">
+    <Flex align="center center">
       I am on center of page
     </Flex>
   );
@@ -27,6 +29,8 @@ function MyComponent() {
 ```js
 import Flex from 'react-simple-flex';
 
+// With no alignment you specifically have to set "row" or
+// "column" to tell it to flex its children
 function MyComponent() {
   return (
     <Flex row>
@@ -53,6 +57,10 @@ function MyComponent() {
 ```js
 import Flex from 'react-simple-flex';
 
+// "alignVertical" and "alignHorizontal" aligns intuitively
+// with the "row" and "column" property. In the example
+// below we show the children in a column where they are
+// vertically centered
 function MyComponent() {
   return (
     <Flex column alignVertical="center">
@@ -70,7 +78,7 @@ function MyComponent() {
   return (
     <Flex alignHorizontal="center">
       <Flex>I am horizontally centered</Flex>
-      <Flex>So am I, we become ROW when not defined</Flex>
+      <Flex alignSelf="bottom">So am I, but also vertically at the bottom</Flex>
     </Flex>
   );
 }
