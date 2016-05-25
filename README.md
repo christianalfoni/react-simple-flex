@@ -3,6 +3,8 @@ An intuitive abstraction over flexbox
 
 **Note** This project is currently in its testing phase!
 
+**DOUBLE NOTE** From version 0.2.0 the API has changed a bit. Just due to experience :)
+
 ### Why does this exist?
 Flexbox is awesome, but very hard to grasp. Especially *justifyContent*, *alignItems* and *alignContent* are not really intuitive. And their behaviour changes based on the *flexDirection*. So this little library just creates an intuitive abstraction over flexbox, making layouts super simple.
 
@@ -53,9 +55,48 @@ import Flex from 'react-simple-flex';
 
 function MyComponent() {
   return (
-    <Flex column alignChildren="center">
+    <Flex column alignVertical="center">
       <Flex>I am vertically centered</Flex>
       <Flex alignSelf="center">So am I, but also horizontally centered</Flex>
+    </Flex>
+  );
+}
+```
+
+```js
+import Flex from 'react-simple-flex';
+
+function MyComponent() {
+  return (
+    <Flex alignHorizontal="center">
+      <Flex>I am horizontally centered</Flex>
+      <Flex>So am I, we become ROW when not defined</Flex>
+    </Flex>
+  );
+}
+```
+
+```js
+import Flex from 'react-simple-flex';
+
+function MyComponent() {
+  return (
+    <Flex align="center center">
+      <Flex>I am horizontally and vertically centered</Flex>
+      <Flex alignSelf="bottom">So am I, though at the bottom vertically</Flex>
+    </Flex>
+  );
+}
+```
+
+```js
+import Flex from 'react-simple-flex';
+
+function MyComponent() {
+  return (
+    <Flex column align="center center">
+      <Flex>I am horizontally and vertically centered</Flex>
+      <Flex alignSelf="right">So am I, though to the right horizontally</Flex>
     </Flex>
   );
 }
@@ -86,7 +127,11 @@ html, body, #app, #app > * {
 
 **reverseWrap**. Reversed wrap
 
-**alignChildren="center center"**. Set the alignment of children on the two axis. With *row* you would say *alignChildren="right bottom"*, and with *column* the same thing would happen using *alignChildren="bottom right"*. Both axis also supports *space-between* and *space-around*. You can also use *stretch* as the second alignment. You do not have to think about multi line properties, this is done automatically as React knows the number of children
+**alignVertical="bottom"**. *Top, center, bottom, space-between and space-around* in *column* mode. The same with the addition of *stretch* in *row* mode
+
+**alignHorizontal="right"**. *Left, center, right, space-between and space-around* in *row* mode. The same with the addition of *stretch* in *column* mode
+
+**align="center center"**. This is just combining *vertical horizontal* values in *column* mode and *horizontal vertical* in *row* mode
 
 **grow**, **grow="2"**. Makes the flex container stretch and take up as much space as possible
 

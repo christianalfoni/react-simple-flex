@@ -4,8 +4,8 @@ import React from 'react';
 import Flex from 'react-simple-flex';
 
 render((
-  <Flex row>
-    <Flex grow>hey</Flex>
-    <Flex grow>hopp</Flex>
+  <Flex>
+    <Flex>hey</Flex>
+    <Flex>hopp</Flex>
   </Flex>
 ), document.querySelector('#app'));
