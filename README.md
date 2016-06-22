@@ -1,10 +1,6 @@
 # react-simple-flex
 An intuitive abstraction over flexbox
 
-**Note** This project is currently in its testing phase!
-
-**DOUBLE NOTE** From version 0.2.0 the API has changed a bit. Just due to experience :)
-
 ### Why does this exist?
 Flexbox is awesome, but very hard to grasp. Especially *justifyContent*, *alignItems* and *alignContent* are not really intuitive. And their behaviour changes based on the *flexDirection*. So this little library just creates an intuitive abstraction over flexbox, making layouts super simple.
 
