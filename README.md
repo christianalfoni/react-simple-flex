@@ -7,6 +7,11 @@ Flexbox is awesome, but very hard to grasp. Especially *justifyContent*, *alignI
 ### What about the support for flexbox?
 Of course Internet Explorer is lagging behind a bit, but yeah, you can use Flexbox: http://caniuse.com/#feat=flexbox. This project no IE11 fixes currently, but please help out with that if you like the lib and need it :)
 
+### How it differs from normal flex
+- By default a Flex container does not stretch, you have to use **grow** explicitly. This just creates a more predictable behaviour
+- No more thinking justify, align, content... just **align**, much like a background image position. The library will use the correct properties under the hood
+- It is just a lot less to align... or justify?... in your head
+
 ### Some examples
 ```js
 import Flex from 'react-simple-flex';
@@ -141,9 +146,4 @@ html, body, #app, #app > * {
 
 **order="1"**. Sets the order of the Flex container, meaning that you can choose by each Flex item in what order to display them
 
-**alignSelf="left"**. Lets the child Flex container to set its own alignment. Supports *left, top, right* and *bottom*
-
-### How it differs from normal flex
-- By default a Flex container does not stretch, you have to use **grow** explicitly. This just creates a more predictable behaviour
-- No more thinking justify, align, content... just **align**, much like a background image position. The library will use the correct properties under the hood
-- It is just a lot less to align... or justify?... in your head
+**alignSelf="left"**. Lets the child Flex container to set its own alignment. Supports *left, top, right* and *bottom
